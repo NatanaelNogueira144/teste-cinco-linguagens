@@ -144,13 +144,11 @@
                         </button>
                     </div>
 
-                    @if(Route::has('password_reset'))
-                        <div class="d-flex justify-content-around">
-                            <a class="btn btn-link" href="{{ route('password_reset') }}">
-                                Esqueceu a Senha?
-                            </a>
-                        </div>
-                    @endif
+                    <div class="d-flex justify-content-around">
+                        <a class="btn btn-link" href="{{ route('forgotPassword.index') }}">
+                            Esqueceu a Senha?
+                        </a>
+                    </div>
                 </form>
             </div>
         </div>

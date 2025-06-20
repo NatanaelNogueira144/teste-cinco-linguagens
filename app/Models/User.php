@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Notifications\ResetPasswordNotification;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -46,6 +47,11 @@ class User extends Authenticatable
     public function results() 
     {
         return $this->hasMany(Result::class);
+    }
+
+    public function sendPasswordResetNotification($token) 
+    {
+        $this->notify(new ResetPasswordNotification($token, $this->email, $this->name));
     }
 
     protected function avatarImageUrl(): Attribute

@@ -2,10 +2,12 @@
 
 use App\Http\Controllers\{
     AuthController,
+    ForgotPasswordController,
     FormController,
     HomeController,
     LanguageController,
     QuestionController,
+    ResetPasswordController,
     UserController
 };
 use Illuminate\Support\Facades\Route;
@@ -16,6 +18,10 @@ Route::get('/login', [HomeController::class, 'index'])->name('showLogin');
 Route::middleware('guest')->group(function () {
     Route::post('/register', [AuthController::class, 'register'])->name('auth.register');
     Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
+    Route::get('/forgot-password', [ForgotPasswordController::class, 'index'])->name('forgotPassword.index');
+    Route::post('/forgot-password', [ForgotPasswordController::class, 'submit'])->name('forgotPassword.submit');
+    Route::get('/reset-password/{token}', [ResetPasswordController::class, 'index'])->name('resetPassword.index');
+    Route::post('/reset-password/{token}', [ResetPasswordController::class, 'submit'])->name('resetPassword.submit');
 });
 
 Route::middleware('auth')->group(function () {
