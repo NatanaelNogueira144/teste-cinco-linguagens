@@ -27,7 +27,7 @@ class LanguageController extends Controller
         return view('languages.edit', ['language' => $language]);
     }
 
-    public function update(Request $request, Language $language)
+    public function update(UpdateLanguageRequest $request, Language $language)
     {
         $language->update($request->only('name'));
         return redirect()->route('languages.index')->with('status', [

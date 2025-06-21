@@ -40,7 +40,9 @@
         </div>
     </div>
 </div>
+@endsection
 
+@section('scripts')
 <script>
     function disableButtonOnSubmit(event, form) {
         event.preventDefault();

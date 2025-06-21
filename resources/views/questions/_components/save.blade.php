@@ -14,7 +14,7 @@
             placeholder="Digite a descrição..."
             required
             type="text"
-            value="{{ $question->description ?? old('description') }}"
+            value="{{ old('description') ?? $question->description ?? '' }}"
         >
 
         @error('description')

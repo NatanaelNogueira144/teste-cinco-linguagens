@@ -19,8 +19,8 @@
             @enderror
             <table class="table table-bordered table-striped align-middle">
                 <thead class="text-center">
-                    <th>Marcar</th>
-                    <th>Questão</th>
+                    <th class="align-middle">Marcar</th>
+                    <th class="align-middle">Questão</th>
                 </thead>
                 <tbody>
                     @foreach($questions as $question)

@@ -21,7 +21,7 @@
                             placeholder="Digite o nome..."
                             required
                             type="text"
-                            value="{{ $user->name ?? old('name') }}"
+                            value="{{ old('name') ?? $user->name ?? '' }}"
                         >
 
                         @error('name')

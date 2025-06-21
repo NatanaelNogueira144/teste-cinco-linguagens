@@ -37,8 +37,8 @@
         <div class="table-responsive">
             <table class="table table-bordered table-striped align-middle">
                 <thead>
-                    <th>Nome</th>
-                    <th>Ações</th>
+                    <th class="align-middle">Nome</th>
+                    <th class="align-middle">Ações</th>
                 </thead>
                 <tbody>
                     @foreach($languages as $language)

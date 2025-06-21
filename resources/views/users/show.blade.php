@@ -12,9 +12,9 @@
             <h5 class="card-title">Respostas</h5>
             <table class="table table-bordered table-striped align-middle">
                 <thead class="text-center">
-                    <th>Marcado?</th>
-                    <th>Questão</th>
-                    <th>Linguagem</th>
+                    <th class="align-middle">Marcado?</th>
+                    <th class="align-middle">Questão</th>
+                    <th class="align-middle">Linguagem</th>
                 </thead>
                 <tbody>
                     @foreach($questions as $question)

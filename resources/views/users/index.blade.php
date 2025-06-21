@@ -41,10 +41,10 @@
         <div class="table-responsive">
             <table class="table table-bordered table-striped align-middle">
                 <thead>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Ações</th>
+                    <th class="align-middle">ID</th>
+                    <th class="align-middle">Nome</th>
+                    <th class="align-middle">Email</th>
+                    <th class="align-middle">Ações</th>
                 </thead>
                 <tbody>
                     @foreach($users as $user)
@@ -100,7 +100,9 @@
         </div>
     </div>
 </div>
+@endsection
 
+@section('scripts')
 <script>
     function disableButtonOnSubmit(event, form) {
         event.preventDefault();

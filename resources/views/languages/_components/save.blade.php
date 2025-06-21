@@ -14,7 +14,7 @@
             placeholder="Digite o nome..."
             required
             type="text"
-            value="{{ $language->name ?? old('name') }}"
+            value="{{ old('name') ?? $language->name ?? '' }}"
         >
 
         @error('name')

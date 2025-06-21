@@ -51,14 +51,14 @@
         <div class="table-responsive">
             <table class="table table-bordered table-striped align-middle">
                 <thead>
-                    <th>Descrição</th>
-                    <th>Linguagem</th>
-                    <th>Ações</th>
+                    <th class="align-middle">Descrição</th>
+                    <th class="align-middle">Linguagem</th>
+                    <th class="align-middle">Ações</th>
                 </thead>
                 <tbody>
                     @foreach($questions as $question)
                         <tr>
-                            <td class="align-middle">{{ $question->description }}</td>
+                            <td class="align-middle">{{ $question->short_description }}</td>
                             <td class="align-middle">{{ $question->language->name }}</td>
                             <td class="align-middle">
                                 <a 

@@ -28,7 +28,7 @@ class QuestionController extends Controller
         return view('questions.edit', ['question' => $question]);
     }
 
-    public function update(Request $request, Question $question)
+    public function update(UpdateQuestionRequest $request, Question $question)
     {
         $question->update($request->only('description'));
         return redirect()->route('questions.index')->with('status', [
