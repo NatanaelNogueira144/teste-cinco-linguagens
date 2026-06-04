@@ -7,6 +7,7 @@ Baseando-se no livro "As Cinco Linguagens do Amor" de Gary Chapman, este teste t
 - Faça o download do código e extraia onde deseja instalar.
 - Abra o terminal na pasta onde está o projeto e execute o comando "composer update" (é necessário ter o Composer instalado).
 - Na pasta do projeto, crie o arquivo .env e copie e cole nele o conteúdo de .env.example, e preencha as variáveis conforme o ambiente onde você está instalando o projeto.
+- Execute o comando "php artisan key:generate" para gerar uma App Key no .env.
 - Uma vez configurado as variáveis de ambiente, abra o terminal na pasta do projeto e execute o comando "php artisan migrate" para criar as tabelas do banco de dados.
 - Abra o terminal na pasta do projeto e execute o comando "php artisan db:seed" para adicionar os dados iniciais no banco de dados.
 - Inicie o servidor PHP a partir da pasta public.
