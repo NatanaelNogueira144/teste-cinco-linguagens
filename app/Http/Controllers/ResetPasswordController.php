@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ResetPasswordRequest;
 use App\Models\User;
 use Illuminate\Auth\Events\PasswordReset;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\{ Hash, Password };
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;

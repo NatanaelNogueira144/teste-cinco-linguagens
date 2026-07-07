@@ -4,11 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\TestRequest;
 use App\Models\{ Answer, Language, Question, Result };
-use Illuminate\Http\Request;
-use App\Mail\TestResultsMail;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
-use Mail;
+use Illuminate\Support\Facades\{ Auth, DB };
 
 class FormController extends Controller
 {
